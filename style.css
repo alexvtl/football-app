@@ -1,0 +1,102 @@
+body {
+    background: url('https://rare-gallery.com/uploads/posts/589366-4238x2517-champions.jpg');
+    background-size:cover;
+    
+   background-attachment: fixed;
+  }
+  header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  section{
+    width:100%;
+  }
+  #texte{
+    display:flex;
+    color:white;
+    align-items:center;
+    width:100%;
+    justify-content:center;
+  }
+  
+  #league{
+    margin:20px 0 0 20%;
+  }
+  
+  h3{
+    margin:20px 0 0 20%;
+  }
+  
+  .link_name{
+    text-decoration: none;
+      color:black;
+  }
+  
+  .link_name:hover{
+    text-decoration: underline;
+  }
+  
+  
+  #texte h1{
+    margin: 0 10px;
+  }
+  
+  main{
+    display:flex;
+    justify-content:center;
+  }
+  
+  table{
+    width:80%;
+    border-collapse: collapse;
+    border: solid 1px lightgray;
+    border-radius:2px;
+    background-color:rgba(0, 0, 0, .3); 
+  }
+  
+  thead{
+    border:solid 2px black;
+    margin:0px;
+    padding:2px;
+    background-color:lightgray;
+  }
+  
+  td{
+    border:none;
+    text-align:center;
+    padding:2px;
+    color: rgba(243, 243, 243, .3);
+  }
+  .td_rank{
+    width:10%
+  }
+  
+  tr{
+    border:solid 1px lightgray;
+  }
+  
+  .clubs-logo{
+    width:50px;
+    height:50px;
+  }
+  .td_logo{
+    width:10%
+  }
+  .league_logo{
+    width:100px;
+    height:100px;
+  }
+  .td_name{
+    width:15%}
+  .td_points{
+    font-weight:bold;
+  }
+  .td_form{
+    width:15%
+  }
+  
+  .league_flag{
+    width:40px;
+    height:40px;
+  }

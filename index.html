@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  <title>Football App</title>
+</head>
+<body>
+  <header>
+    <h1>Football App</h1>
+  </header>
+  <section>
+  <div id='texte'></div>
+  <select id="league">
+    <option value=39 selected>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
+     <option value=61>🇫🇷 Ligue 1</option>
+     <option value=62>🇫🇷 Ligue 2</option>
+     <option value=140>🇪🇸 Liga </option>
+    <option value=78>🇩🇪 Bundesliga Allemande </option>
+    <option value=135>🇮🇹 Serie A </option>
+    <option value=94>🇵🇹 Primeira liga</option>
+  </select>
+  <h3>Saison 2022-23</h3>
+       </section>
+  <main>
+  <table>
+    <thead>
+        <tr>
+            <th colspan="2">Classement</th>
+          <th class=th_equipe >Equipe</th>
+          <th>MJ</th>
+          <th>G</th>
+          <th>N</th>
+          <th>D</th>
+          <th>BP</th>
+          <th>BC</th>
+          <th>DB</th>
+          <th>Pts</th>
+          <th>5 derniers</th>
+        </tr>
+    </thead>
+    <tbody id="table">
+    </tbody>
+</table>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
