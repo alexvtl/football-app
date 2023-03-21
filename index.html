@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://previews.123rf.com/images/ylivdesign/ylivdesign1704/ylivdesign170400163/74964805-ic%C3%B4ne-de-ballon-de-football-ou-de-football-simple-illustration-d-ic%C3%B4ne-de-vecteur-de-ballon-de.jpg"/>
   <title>Football App</title>
 </head>
 <body>
@@ -14,23 +15,28 @@
   </header>
   <section>
   <div id='texte'></div>
-  <select id="league">
-    <option value=39 selected>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
-     <option value=61>🇫🇷 Ligue 1</option>
-     <option value=62>🇫🇷 Ligue 2</option>
-     <option value=140>🇪🇸 Liga </option>
-    <option value=78>🇩🇪 Bundesliga Allemande </option>
-    <option value=135>🇮🇹 Serie A </option>
-    <option value=94>🇵🇹 Primeira liga</option>
-  </select>
-  <h3>Saison 2022-23</h3>
+  
+  
        </section>
   <main>
+    <div id="content-table">
+      <h3>Saison 2022-23</h3>
+      <div id="contener_select">
+      <select id="league">
+        <option value=39 selected>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</option>
+         <option value=61>🇫🇷 Ligue 1</option>
+         <option value=62>🇫🇷 Ligue 2</option>
+         <option value=140>🇪🇸 Liga </option>
+        <option value=78>🇩🇪 Bundesliga Allemande </option>
+        <option value=135>🇮🇹 Serie A </option>
+        <option value=94>🇵🇹 Primeira liga</option>
+      </select>
+    </div>
   <table>
     <thead>
         <tr>
             <th colspan="2">Classement</th>
-          <th class=th_equipe >Equipe</th>
+          <th>Equipe</th>
           <th>MJ</th>
           <th>G</th>
           <th>N</th>
@@ -45,6 +51,24 @@
     <tbody id="table">
     </tbody>
 </table>
+<h2 class="titre_scorer">top 5 meilleurs buteurs </h3>
+<table id="table_scorer">
+  <thead>
+      <tr>
+          <th class="th_scorer">joueur</th>
+        <th class="th_scorer">buts</th>
+        <th class="th_scorer">tirs</th>
+        <th class="th_scorer">pénalty</th>
+        <th class="th_scorer">Passes D</th>
+        <th class="th_scorer">cartons</th>
+        <th class="th_scorer">matchs</th>
+        <th class="th_scorer">club</th>
+      </tr>
+  </thead>
+  <tbody id="tbody_scorer">
+  </tbody>
+</table>
+    </div>
   </main>
   <script src="index.js"></script>
 </body>

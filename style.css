@@ -2,13 +2,22 @@ body {
     background: url('https://rare-gallery.com/uploads/posts/589366-4238x2517-champions.jpg');
     background-size:cover;
     
+    
    background-attachment: fixed;
   }
+
+  
   header{
     display:flex;
     justify-content:center;
     align-items:center;
   }
+
+  header h1{
+    color: rgba(243, 243, 243, 1);
+    font-family:'Poppins', sans-serif;
+  }
+
   section{
     width:100%;
   }
@@ -21,16 +30,24 @@ body {
   }
   
   #league{
-    margin:20px 0 0 20%;
+    margin-left: 5%;
+    background-color:rgba(211, 211, 211, 0.3);
+    border: none;
+    border-radius: 3px;
+    color: rgba(243, 243, 243, 1);
+    padding: 4px;
   }
   
   h3{
-    margin:20px 0 0 20%;
+    margin:20px auto 40px;
+    color:  rgba(243, 243, 243, 1);
+    font-family:'Poppins', sans-serif;
+    text-align: center;
   }
   
   .link_name{
     text-decoration: none;
-      color:black;
+    color: rgb(255, 255, 255);
   }
   
   .link_name:hover{
@@ -48,55 +65,214 @@ body {
   }
   
   table{
-    width:80%;
+    width: 1000px;
     border-collapse: collapse;
-    border: solid 1px lightgray;
-    border-radius:2px;
-    background-color:rgba(0, 0, 0, .3); 
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0);
+    border:rgb(255, 255, 255);
+    align-self: flex-start;
+    margin: auto;
   }
-  
+  #content-table{
+    padding: 20px 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top:  30px;
+    box-shadow:0px 0px 16px -1px #FFFFFF;
+    overflow-x: scroll;
+    
+  }
+  #contener_select{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   thead{
-    border:solid 2px black;
     margin:0px;
-    padding:2px;
-    background-color:lightgray;
+    
+  }
+  tbody tr{
+    border-top:solid 0.1px white;
+    border-bottom: solid 0.1px rgb(255, 255, 255);
+
+  }
+  .line{
+    opacity: 0;
+  }
+
+  th{
+    padding: 7px;
+    color: white;
   }
   
   td{
-    border:none;
+  
     text-align:center;
     padding:2px;
-    color: rgba(243, 243, 243, .3);
+    color: rgb(255, 255, 255);
   }
   .td_rank{
     width:10%
   }
   
-  tr{
-    border:solid 1px lightgray;
-  }
   
   .clubs-logo{
-    width:50px;
+    width:40px;
     height:50px;
   }
   .td_logo{
     width:10%
   }
   .league_logo{
-    width:100px;
+    width:77px;
     height:100px;
+    object-fit: cover;
+    margin-right: 10px;
   }
   .td_name{
     width:15%}
   .td_points{
     font-weight:bold;
+    font-size: large;
   }
   .td_form{
     width:15%
   }
   
   .league_flag{
-    width:40px;
+    width:60px;
     height:40px;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+
+  .fa-xmark{
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 5px;
+    margin: 1px;
+    font-size: 13px;
+  }
+  .fa-minus{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 1px;
+    font-size: 13px;
+  }
+  .fa-check{
+    background-color: green;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 1px;
+    font-size: 13px;
+  }
+
+
+  #table_scorer{
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .th_scorer{
+    text-transform: capitalize;
+  }
+
+  .scorer_data_box{
+    display: flex;
+    align-items: center;
+  }
+
+  .scorer_photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   
+  }
+  .scorer_name{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+  }
+  .scorer_data2_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+    width: 70%;
+    margin: 0;
+  }
+
+  .club_scorer_photo{
+    height: 100px;
+    width: 100px;
+  }
+
+   .yellow_card{
+    width: 10px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 2px;
+   }
+   .red_card{
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    border-radius: 2px;
+   }
+
+   .span_card{
+    margin: 3px;
+   }
+
+  .rate_scorer{
+    border-radius: 50%;
+    padding: 15px 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px green;
+  
+  }
+
+  .td_scorer_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .td_goals{
+    font-weight: bold;
+   
+  }
+
+  .td_games{
+    font-size: larger;
+  }
+
+  .titre_scorer{
+color: #FFFFFF;
+text-transform: capitalize;
+margin-top: 150px;
+  }
+
+  @media screen and (max-width:1400px) {
+    .td-rank{
+      width: 1%;
+    }
+    th{
+      padding: 3px;
+    }
+    table{
+      margin-left: 40px;
+    }
+    #content-table{
+      width: 100%;
+    }
   }
